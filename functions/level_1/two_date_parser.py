@@ -15,4 +15,9 @@ def compose_datetime_from(date_str: str, time_str: str) -> datetime.datetime:
         int(minute_str),
     )
 
+if __name__ == "__main__":
+    # Example usage
+    print(compose_datetime_from("tomorrow", "12:30"))
+    print(compose_datetime_from("today", "14:45"))
+    print(compose_datetime_from("yesterday", "08:15"))
 
